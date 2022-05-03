@@ -1,0 +1,145 @@
+.post {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 1vmax 2vmax;
+    margin: 2vmax;
+  }
+  
+  .postHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5vmax;
+  }
+  .postHeader > button {
+    border-radius: 100%;
+    color: rgba(0, 0, 0, 0.582);
+  }
+  
+  .post > img {
+    width: 100%;
+  }
+  
+  .postDetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vmax;
+    align-items: center;
+    justify-content: center;
+  }
+  .postDetails div{
+    flex-basis: 100%;
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+  }
+  .user img{
+    border-radius: 50%;
+    height: 3vmax;
+    width: 3vmax;
+    margin-right: 0px;
+  }
+  .user > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 1vmax;
+    margin-left: 2vmax;
+  }
+  .postFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .postFooter > button {
+    color: rgba(0, 0, 0, 0.767);
+    margin-right: 2vmax;
+    border-radius: 100%;
+    transition: all 0.3s;
+  }
+  
+  .postFooter > button:hover {
+    transform: translateY(-4px);
+  }
+  
+  .postFooter > button > svg {
+    font-size: 1.7vmax;
+  }
+  
+  .DialogBox {
+    min-width: 500px;
+    height: 100vh;
+    padding: 2vmax;
+  }
+  .commentForm {
+    display: flex;
+    margin: 1vmax;
+  }
+  .commentForm > input {
+    width: 100%;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 30px 0 0 30px;
+    font: 100 1vmax "Roboto", sans-serif;
+  }
+  .commentForm > button {
+    border-radius:10%;
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+  }
+  .commentForm>button:hover{
+    background-color: blue;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .post {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.068);
+      padding: 0 0 4vw;
+      margin: 0;
+    }
+  
+    .postFooter > button > svg {
+      font-size: 8vw;
+    }
+    .DialogBox{
+      min-width: 200px;
+    }
+    .DialogBox h4{
+      font-size: 25px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .commentForm{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .commentForm button{
+      margin-top: 20px;
+    }
+    .commentForm input{
+      height: 30px;
+      width: 90%;
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .commentForm > button {
+      outline: none;
+      border: none;
+      background-color: white;
+      color: black;
+      padding: 10px 30px;
+    }
+  }
+  
