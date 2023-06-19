@@ -66,6 +66,9 @@ const LoginSignUp = ({history,location}) => {
     } else {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
+
+    
+
   };
 
   const redirect = location.search ? location.search.split("=")[1] : "/";

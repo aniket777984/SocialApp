@@ -28,12 +28,15 @@ function App() {
   useEffect(()=>{
     store.dispatch(loadUser());
   },[]);
+  
 
   
   return (
     <Router>
       {isAuthenticated && <Header />}
       {/* {isAuthenticated && <UserOption/>} */}
+
+      {/* <Header /> */}
 
       <Switch>
 
